@@ -14,6 +14,8 @@
  *  limitations under the License.
  *
  */
+#ifndef SIMPLETHREAD_H
+#define SIMPLETHREAD_H
 
 #include <pthread.h>
 #include <stdlib.h>
@@ -47,6 +49,12 @@ vthread vthread_initAndStart(vthread_t id, void *(*startFunc) (void*), void * ar
 vthread _vthread_alloc();
 
 void vthread_free(vthread t);
+
+
+#endif
+
+
+
 
 
 
